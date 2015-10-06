@@ -1,0 +1,27 @@
+{
+  "name": "nodeapp",
+  "version": "1.0.0",
+  "description": "website built with node",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bdspen/nodeapp.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bdspen/nodeapp/issues"
+  },
+  "homepage": "https://github.com/bdspen/nodeapp#readme",
+  "dependencies": {
+    "csurf": "^1.8.3",
+    "express": "^4.13.3",
+    "express-stormpath": "^1.0.6",
+    "forms": "^1.1.4",
+    "jade": "^1.11.0",
+    "xtend": "^4.0.0"
+  }
+}
