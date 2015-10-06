@@ -1,6 +1,6 @@
 # _User app with Stormpath_
 
-##### _Description_
+##### _My runthrough of building User functionality for a web app, including login and profile using node.js and express by stormpath. See the walkthrough here: https://stormpath.com/blog/build-nodejs-express-stormpath-app/_
 
 #### By _**Ben Spenard**_
 
@@ -20,17 +20,12 @@ application has a built-in app router. _basically a mini app which handles JUST 
 * I added (lines 6 and 7 of app.js) an option to change the port that your node server is working on just change the value in "YOUR CUSTOM PORT VALUE" to whatever port you want your local node js server to be and match that value in the app.listen(); at the end of the app.js file.
 
 ## Setup
-###### This is the setup to view the project as a whole
-
-* _setup_
-* _to list setup instructions_
-* _in a simple_
 * _if you want to walk through the tutorial to build this site go to https://stormpath.com/blog/build-nodejs-express-stormpath-app/_
 
 
 ## Technologies Used
 
-_node.js, Express, Bootstrap, Stormpath_
+_node.js, Express, Bootstrap, Stormpath, Jade_
 
 _**Stormpath** is an API service that allows developers to create, edit, and securely store user accounts and user account data, and connect them with one or multiple applications. Their API enables you to:_
 
@@ -39,6 +34,14 @@ _**Stormpath** is an API service that allows developers to create, edit, and sec
 * Perform password and social based login
 * Send password reset messages
 * Issue API keys for API-based web apps
+
+###### Dependencies In package.json
+
+* Express http://expressjs.com/
+* link to _express-stormpath_ library https://github.com/stormpath/express-stormpath
+* Jade http://jade-lang.com/
+* CSURF https://github.com/expressjs/csurf
+* link to _forms_ https://github.com/caolan/forms
 
 _**tech tip!:**_ use the Nodemon tool (file watcher) This will start your server and watch for any file changes. Nodemon will automatically restart your server if you change any files!
 install globally
