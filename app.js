@@ -3,8 +3,8 @@ var stormpath = require('express-stormpath');
 
 var app = express();
 
-//set a custom port for the node server
-// app.set('port', process.env.PORT || 8001);
+//OPTIONAL set a custom port for the node server
+// app.set('port', process.env.PORT || YOUR CUSTOM PORT VALUE);
 
 app.set('views', './views');
 app.set('view engine', 'jade');
@@ -24,5 +24,8 @@ app.get('/', function(req, res) {
     title: 'Welcome'
   });
 });
+
+//enables our PROFILE page, forces authentication
+app.use('/profile',stormpath.loginRequired,require('./profile')());
 
 app.listen(3000);
